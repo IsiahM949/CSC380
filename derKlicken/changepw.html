@@ -1,0 +1,47 @@
+<html>
+<head>
+<script>
+function verify() {
+    if (document.getElementById("username").value != "")
+        return true
+
+    else if (document.getElementById("username").value == "admin"){
+	alert("You cannot change the admin's password! Nice try!")
+	return false
+    }
+    else {
+        alert("Your username cannot be empty")
+        return false
+    }
+}
+</script>
+<style>
+* {box-sizing: border-box;
+	font-family: Verdana;
+	text-align: center;
+	background-color: #7be5cb;}
+
+
+div {padding: 5px 5px 5px 5px;
+	border: double;
+	width: 25%;
+	margin: 0 auto;}
+
+</style>
+</head>
+<body>
+<div>
+<form method="post" action="request_pw_reset.php" onsubmit="return verify()">
+<label for="username">Username</label>
+<input type="text" name="username" id="username"/>
+<br>
+<input type="submit" value="Change password" name="submit_button" style="background-color: #41ad92;">
+</form>
+<form method="post" action="send_admin_email.php" onsubmit="return verify()">
+<label for="username">Username</label>
+<input type="text" name="username" id="username"/>
+<br>
+<input type="submit" value="Send admin email to give/change password" name="admin_email_button" style="background-color: #41ad92;">
+</form>
+</div>
+</body>

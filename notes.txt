@@ -1,0 +1,12 @@
+cd ~meyer/PUBLIC_HTML/CSC380/SUBMITAPP
+
+grep ajax *
+
+admin_page.php
+
+
+setfacl -m u:apache:rw "filename"
+
+ls -l
+
+getfacl "filename"
