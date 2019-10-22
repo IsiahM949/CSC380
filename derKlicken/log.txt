@@ -1,0 +1,28 @@
+2/08/2019
+	-started making log in on web page
+
+2/11/2019
+	-figured out we had to separate the html and php files, now we are rolling
+	-plan on figuring out how to make it not display the php code and actually read out	
+
+2/25/2019
+	-cleaned up log in page
+	-made clean register page
+	-added username and realname fields to use in session dictionary
+	-starting teacher part with questions
+	-figuring out sessions with login
+
+3/8/2019
+	-integrated MySQL into login
+
+3/11/2019
+	-finishing and perfecting the login with MySQl
+	-still fixing teacher page
+
+4/22/2019
+	-user password reset done
+	-admin page done
+	-all pages prettied up
+
+5/12/2019
+	-project due date
